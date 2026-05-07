@@ -2,23 +2,176 @@
 <html lang="en">
 
 <!--
-WRITTEN BY: Your name here
-EMAIL: Your email here
+WRITTEN BY: Priscilla Castaneda
 -->
 
 <head>
   <meta charset="utf-8">
-  <meta name="author" content="Your name here">
-  <meta name="description" content="description of your page">
-   <!-- you would link to an external stylesheet here! -->
-   <!-- you would also link to Bootstrap here! -->
-  <title>title here</title>
+  <meta name="viewport" content="width=device-width, initial-scale =1.0" />
+  <meta name="author" content="Priscilla Castaneda">
+  <meta name="description" content="Priscilla Castaneda - UI/UX & Product Designer based in Irvine, CA">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="portfolio.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+  <title>Priscilla Castaneda - UI/UX Designer</title>
 </head>
+
 <body>
-  <p>
-    <a href="http://validator.w3.org/check?uri=referer">
-       W3C validator
-    </a>
-  </p>
+  <!-- NAV -->
+  <nav>
+
+    <span class="nav-logo">Priscilla Castaneda</span>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+  </nav>
+
+  <!--HERO-->
+
+  <section id="hero">
+    <div class="hero-text">
+      <p class="hero-greeting">UI/UX &amp; Product Designer</p>
+      <h1 class="hero-name">Designing<br><em>experiences</em><br>that connect.</h1>
+      <p class="hero-bio">
+        Hi, I am Priscilla - a UI/UX designer graduating from UC Irvine with a
+        focus on intuituve, human-centered digital products. I bridge
+        beautiful interfaces with thoughtful user experiences.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary">View My Work <i class="fas fa-arrow-down"
+            style="font-size:.75rem"></i></a>
+        <a href="#contact" class="btn-ghost">Get in Touch</a>
+      </div>
+    </div>
+
+    <div class="hero-image-wrap">
+      <div class="hero-photo-frame">
+        <img src="priscilla.jpeg" alt="Priscilla Castaneda" />
+        <div class="hero-badge">
+          <span class="badge-dot"></span> Available for opportunites
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--ABOUT-->
+  <section id="about" class="section" style="border-top: 1px solid var(--border);">
+    <div class="about-grid">
+      <div class="reveal">
+        <span class="section-label">About Me</span>
+        <h2 class="about-heading">Where design<br>meets purpose.</h2>
+        <p class="about-body">
+          I am a senior at UC Irvine studying Informatics with a specializatio in Human-Computer Interaction.
+          My design process is rooted in empathy - I spend time understanding users before ever opening Figma.
+        </p>
+        <p class="about-body">
+          Outside of design, I'm drawn to typography, branding, and the small details that make
+          a product feel considered. I'm looking for a role where I can grow alongside a passionate team and
+          contribute to produts people love using every day.
+        </p>
+      </div>
+      <div class="reveal" style="transition-delay:.15s">
+        <span class="section-label">Skills &amp; Tools</span>
+        <div class="skills-grid">
+          <div class="skill-chip"><i class="fa-brands fa-figma"></i> Figma</div>
+          <div class="skill-chip"><i class="fas fa-pen-nib"></i>Prototyping</div>
+          <div class="skill-chip"><i class="fas fa-users"></i>User Research</div>
+          <div class="skill-chip"><i class="fas fa-layer-group"></i>Wireframing</div>
+          <div class="skill-chip"><i class="fas fa-mobile-screen"></i>Responsive Design</div>
+          <div class="skill-chip"><i class="fas fa-code"></i>HTML &amp; CSS</div>
+          <div class="skill-chip"><i class="fas fa-palette"></i>Visual Design</div>
+          <div class="skill-chip"><i class="fas fa-chart-line"></i>Usability Testing</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section" style="border-top: 1px solid var(--border);">
+    <div class="projects-intro reveal">
+      <span class="section-label">Selected Work</span>
+      <h2>Projects I'm proud of.</h2>
+      <p>Two case studies that shaped how I think about design and user experience.</p>
+    </div>
+
+    <div class="project-card reverse reveal">
+      <div class="project-img-wrap" style="background:#EEF3F7;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToB6Zl0UfyRGFQlz-wdnf_TOk6IeLoeWOtQw&s"
+          alt="Dine App" />
+      </div>
+      <div>
+        <div class="project-meta">
+          <span class="tag">Product Design</span><span class="tag">Prototyping</span>
+          <span class="tag">User Testing</span>
+        </div>
+        <h3 class="project-title">Better Belli</h3>
+        <p class="project-desc">
+          Designed a restaurant discovery app focusd on group decision-making - a notoriously
+          frustrating experience. Iterated through usability tests with 8 participants to reduce average
+          decision time by 40%.
+        </p>
+        <a href="dine-case-study.html" class="project-link">View Case Study <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-img-wrap">
+        <img
+          src="https://static.vecteezy.com/system/resources/previews/006/057/992/non_2x/spotify-logo-on-transparent-background-free-vector.jpg"
+          alt="Spotify Redesign" />
+      </div>
+      <div>
+        <div class="project-meta">
+          <span class="tag">UI Design</span><span class="tag">UX Research</span>
+          <span class="tag">Figma</span>
+        </div>
+        <h3 class="project-title">Spotify Redesign</h3>
+        <p class="project-desc">
+          Explored pain points in Spotify's web-browser listening experience through user interviews and competitive
+          analysis.
+          Redesigned the Now Playing screen and social features to reduce friction and boost discoverability.
+        </p>
+        <a href="spotify-case-study.html" class="project-link">View Case Study <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <div id="contact" class="reveal">
+    <div class="contact-block">
+      <span class="section-label">Get in Touch</span>
+      <h2>Let's make something <em>great</em> together.</h2>
+      <p>I'm actively looking for UI/UX and Product Design roles. Whether you have
+        an opportunity or just want to connect - my inbox is always open.
+      </p>
+      <div class="contact-actions">
+        <a href="mailto:p.castaneda821@gmail.com" class="btn-light"><i
+            class="fas fa-envelope"></i>p.castaneda821@gmail.com</a>
+        <a href="https://drive.google.com/file/d/1xocX229H1OEtYxUV4I8pQM0A27-TrgDI/view?usp=sharing" class="btn-outline-light"><i class="fas fa-file-lines"></i>Download Resume</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Priscilla Castaneda · Designed &amp; built with care · Irvine, CA </p>
+  </footer>
+
+  <script>
+    const reveals = document.querySelectorAll('.reveal');
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(e => {if (e.isIntersecting) e.target.classList.add('visible');});
+    }, {threshold: 0.1});
+    reveals.forEach(e1 => obs.observe(e1));
+  </script>
+
 </body>
+
 </html>
