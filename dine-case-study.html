@@ -299,7 +299,7 @@
             const els = document.querySelectorAll('.case-section');
             const obs = new IntersectionObserver(entries => {
                 entries.forEach(e => {if (e.isIntersecting) e.target.classList.add('visible');});
-            }, { threshold: 0.1});
+            }, { threshold: 0});
             els.forEach(e1 => obs.observe(e1));
         </script>
 
